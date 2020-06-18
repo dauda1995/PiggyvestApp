@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+   >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_margin="40dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_screen_lock_portrait_black_24dp" />
+
+    <TextView
+        android:id="@+id/informationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="#2A34A6"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:fontFamily="sans-serif-light"
+        android:text="PIGGYVEST INTEREST CALCULATOR"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/field_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:textColor="#2A34A6"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"/>
+    <EditText
+        android:id="@+id/field_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:textColor="#2A34A6"
+        android:inputType="textPassword"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/button_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:text="Sign In"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/forgottenPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/fab_padding_top"
+        android:gravity="center_horizontal"
+        android:textColor="#2A34A6"
+        android:text="Forgotten password?" />
+
+</LinearLayout>
